@@ -23,13 +23,11 @@ namespace GrpcClient
 
 
 
-			//UnaryCall(client);
+			UnaryCall(client);
 			//await ServerStreamingCall(client);
 			//await ClientStreamingCall(client);
 			//await BiDirectionalStreamingCall(client);
-
-
-			UnaryWithListCall(client);
+			//UnaryWithListCall(client);
 
 
 			channel.ShutdownAsync().Wait();
